@@ -6,7 +6,7 @@ import "../styles/style.css"
 export default function Home() {
     return (
         <div>
-           hello
+           hello from home page
         </div>
     )
 }
