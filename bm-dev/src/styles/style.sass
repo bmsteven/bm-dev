@@ -1,9 +1,24 @@
 @import "./_variables.sass";
+@import url('https://fonts.googleapis.com/css?family=Solway&display=swap');
 
 *
     padding: 0;
     margin: 0;
-
+html
+    // background: $secondaryColor;
 body
-    background: $primaryColor;
+    background: $secondaryColor;
     color: #fff;
+    font-family: 'Solway', serif;
+    overflow-x: hidden;
+::-webkit-scrollbar
+    width: 12px;
+    background: $secondaryColor;
+    margin-top: 70px;
+    display: none;
+::-webkit-scrollbar-track
+    border: 3px solid $primaryColor;
+    display: none;
+::-webkit-scrollbar-thumb
+    background: $secondaryColor;
+    display: none;

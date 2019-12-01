@@ -1,0 +1,38 @@
+.banner
+    position: relative;
+    height: 100%;
+    width: 100%;
+    &::before, &::after
+        content: "";
+        position: absolute;
+        left: 0;
+        height: calc( 120vh - 180px );
+        width: 100%;
+        z-index: -1;
+    &::before
+        top: 0;
+        height: calc( 120vh - 180px );
+        background-image: url("../../../images/bg-image.png");
+        // background-color: rgba(0, 0, 0, 0.6);
+        background-size: cover;
+        background-position: right bottom;
+        clip-path: polygon(100% 0, 0 0, 100% 100%);
+    &::after
+        height: calc( 120vh - 180px );
+        top: 0;
+        background: $primaryColor;
+        clip-path: polygon(50% 50%, 0 100%, 100% 100%);
+    .container
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .profile-details
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            padding-right: 30px;
+        .site-details
+            width: 50%;
