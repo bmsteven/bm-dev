@@ -73,7 +73,7 @@ const Banner = () => {
       <div className="banner">
         <div className="container">
           <div className="profile-details">
-            <div className="image-conatiner">
+            <div className="image-container">
               <img src={dp} alt="dp" />
             </div>
             <div className="name-container">
@@ -84,7 +84,7 @@ const Banner = () => {
             <div className="header">
               <h1>Welcome to my site</h1>
             </div>
-            <div className="site-details">
+            <div className="site-description">
                 <p>
                     Secondary line text Lorem ipsum dolor sit amet, consectetur
                     adipiscing elit. Nam massa quam. Secondary line text Lorem ipsum

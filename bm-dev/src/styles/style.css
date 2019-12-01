@@ -27,4 +27,29 @@ body {
   background: #010101;
   display: none;
 }
+
+h1 {
+  font-size: 4rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+.btn-primary {
+  padding: 10px 15px;
+  color: #010101;
+  text-decoration: none;
+  background: #fff;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  -webkit-transition: .2s ease-in-out;
+  transition: .2s ease-in-out;
+}
+
+.btn-primary:hover {
+  background: #010101;
+  color: #fff;
+}
 /*# sourceMappingURL=style.css.map */
