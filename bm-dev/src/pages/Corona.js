@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import Stats from "../components/Stats";
 
 const useStats = () => {
   const [stats, setStats] = useState();
@@ -55,24 +56,20 @@ const Country = () => {
 const Corona = () => {
   const [selectedCountry, setSelectedCountry] = useState("Tanzania");
   console.log(selectedCountry);
-  const { stats, loading, error } = useStats();
-  console.log(stats);
+  //   const { stats, loading, error } = useStats();
+  //   console.log(stats);
   const countr = Countries();
   console.log(countr);
   const count = Country();
   console.log(count);
-  if (!stats) return <div className='container'>Loading...</div>;
+  useEffect(() => {
+    document.title = `COVID-19 - coronavirus pandemic updates and in ${selectedCountry}`;
+  });
+  //   if (!stats) return <div className='container'>Loading...</div>;
   return (
     <div className='container'>
-      <div className='statBlock'>
-        confirmed: <span>{stats.confirmed.value}</span>
-      </div>
-      <div className='statBlock'>
-        recovered: <span>{stats.recovered.value}</span>
-      </div>
-      <div className='statBlock'>
-        deaths: <span>{stats.deaths.value}</span>
-      </div>
+      <h2>COVID-19 - coronavirus pandemic updates</h2>
+      <Stats url='https://covid19.mathdro.id/api' />
       <div className='countries'>
         {/* {countr.countries} */}
         {!countr ? (
@@ -99,15 +96,9 @@ const Corona = () => {
       </div>
       <div className='country'>
         <h2>Currently showing: {selectedCountry}</h2>
-        <div className='statBlock'>
-          confirmed: <span>{stats.confirmed.value}</span>
-        </div>
-        <div className='statBlock'>
-          recovered: <span>{stats.recovered.value}</span>
-        </div>
-        <div className='statBlock'>
-          deaths: <span>{stats.deaths.value}</span>
-        </div>
+        <Stats
+          url={`https://covid19.mathdro.id/api/countries/${selectedCountry}`}
+        />
       </div>
     </div>
   );
