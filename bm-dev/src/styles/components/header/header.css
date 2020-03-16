@@ -1,3 +1,8 @@
+body {
+  min-height: 100vh;
+  position: relative;
+}
+
 .header-container {
   min-height: 900px;
   min-width: 100vw;
@@ -246,5 +251,10 @@
   width: 100%;
   color: rgba(255, 255, 255, 0.9);
   margin: 20px 0;
+}
+
+.down-nav {
+  position: absolute;
+  min-height: 100vh;
 }
 /*# sourceMappingURL=header.css.map */

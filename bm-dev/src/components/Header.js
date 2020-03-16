@@ -92,7 +92,7 @@ const Banner = () => {
                     Secondary line text Lorem ipsum dolor sit amet, consectetur
                     adipiscing elit. Nam massa quam.
                 </p>
-                <a href="#subscribe" className="btn-primary">Subscribe to my newsletter</a>
+                <a href="#subscribe" className="btn-primary">Subscribe to my youtube channel</a>
             </div>
           </div>
         </div>
@@ -106,6 +106,14 @@ const Header = () => {
                 <TopNav/>
                 <MainNav/>
                 <Banner/>
+                <div className="down-nav">
+                <svg width="101" height="76" viewBox="0 0 101 76" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <line x1="51.6464" y1="50.8674" x2="2.15501" y2="1.35338" stroke="white"/>
+                  <line x1="50.8865" y1="50.4231" x2="100.412" y2="0.897651" stroke="white"/>
+                  <line x1="50.1377" y1="75.3813" x2="0.64634" y2="25.8673" stroke="white"/>
+                  <line x1="49.3778" y1="74.937" x2="98.9032" y2="25.4116" stroke="white"/>
+                </svg>
+                </div>
         </header>
     );
 }

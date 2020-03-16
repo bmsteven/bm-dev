@@ -17,14 +17,7 @@ const Contact = () => {
     return (
       <div className="contact" id="subscribe">
         <div className="container">
-          <div className="subscribe">
-            <form netlify>
-              <label htmlFor="email">
-                <input type="email" placeholder="Enter your email address" />
-                <button type="submit" className="btn-primary">Subscribe to my newsletter</button>
-              </label>
-            </form>
-          </div>
+          <h2>Lets connect</h2>
           <div className="social-media">
             <a href="http://www.youtube.com/">
               <FaYoutube className="icon" />

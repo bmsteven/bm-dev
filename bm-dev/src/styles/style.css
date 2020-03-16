@@ -61,13 +61,17 @@ ul {
   border-radius: 10px;
   font-size: 18px;
   font-weight: bold;
-  -webkit-transition: .2s ease-in-out;
   transition: .2s ease-in-out;
 }
 
 .btn-primary:hover {
   background: #010101;
   color: #fff;
+}
+
+.container {
+  padding: 50px 20px;
+  text-align: center;
 }
 
 footer {
@@ -79,4 +83,3 @@ footer .container {
   margin: 0 auto;
   padding: 30px 0;
 }
-/*# sourceMappingURL=style.css.map */
