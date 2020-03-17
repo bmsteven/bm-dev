@@ -1,0 +1,277 @@
+@import url("https://fonts.googleapis.com/css?family=Solway&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Raleway:400,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html, body {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Solway', serif;
+  overflow-x: hidden;
+}
+
+h1 {
+  font-size: 3.5rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+  padding-bottom: 15px;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  width: 60%;
+  margin: auto;
+}
+
+main {
+  top: 5rem;
+  position: relative;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 5rem;
+  -webkit-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+          box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  background: white;
+  z-index: 999;
+}
+
+nav .container {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+nav .container .logo h1 {
+  font-size: 1.5rem;
+}
+
+nav .container .logo h1 a {
+  color: #2D3748;
+}
+
+nav .container ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 50px;
+}
+
+nav .container ul li {
+  margin-left: 5px;
+}
+
+nav .container ul li a {
+  padding: 10px 0 10px 10px;
+  color: #041016;
+}
+
+nav .container ul li a:hover {
+  opacity: .6;
+}
+
+.emergency {
+  background: #2D3748;
+  padding: 20px 0;
+}
+
+.emergency .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  height: 100%;
+  color: white;
+}
+
+.emergency .container .right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-left: 50px;
+}
+
+.emergency .container .right span {
+  padding: 10px 0;
+  text-align: right;
+}
+
+.emergency .container .right span a {
+  color: #e7dfdf;
+}
+
+.emergency .container .right span a:hover {
+  opacity: .7;
+}
+
+.source .container {
+  padding: 100px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.source .container .left {
+  width: 60%;
+}
+
+.source .container .left h2 {
+  font-size: 1.875rem;
+  line-height: 2.5rem;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  padding-bottom: 1.5rem;
+}
+
+.source .container .left h2 span {
+  color: red;
+}
+
+.source .container .left p {
+  font-size: 1.125rem;
+  line-height: 2rem;
+  color: #718096;
+  padding-bottom: 1.5rem;
+}
+
+.source .container .left a {
+  border-radius: 5px;
+  font-weight: 700;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: all 250ms;
+  transition: all 250ms;
+  position: relative;
+  white-space: nowrap;
+  vertical-align: middle;
+  line-height: 1.2;
+  outline: none;
+  height: 3rem;
+  min-width: 3rem;
+  font-size: 0.875rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  background-color: #2F855A;
+  color: #F7FAFC;
+}
+
+.source .container .left a:hover {
+  background: #F7FAFC;
+  color: #2F855A;
+  outline: 1px solid #2F855A;
+}
+
+.source .container .right {
+  width: 40%;
+}
+
+.stats {
+  background: #F7FAFC;
+  width: 100%;
+  padding: 50px 0;
+}
+
+.stats .container h1 {
+  font-size: 1.825rem;
+  padding-bottom: 20px;
+}
+
+.stats .container .facts {
+  padding: 20px 0;
+}
+
+.stats .container .facts p {
+  font-size: 1.125rem;
+  line-height: 2rem;
+  color: #718096;
+  padding-bottom: 1.5rem;
+}
+
+.stats .container .facts section small {
+  display: block;
+  padding: 10px 0;
+}
+
+.stats .container .facts section small span {
+  font-size: smaller;
+}
+
+.stats .container .facts section .showcase {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.stats .container .facts section .showcase .statBlock {
+  padding: 30px;
+  background: #2D3748;
+  color: white;
+}
+
+.corona-map {
+  width: 100%;
+}
+
+.corona-map img {
+  width: 100%;
+}
+/*# sourceMappingURL=styles.css.map */
