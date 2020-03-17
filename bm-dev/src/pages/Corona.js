@@ -80,6 +80,7 @@ const Corona = () => {
               setSelectedCountry(e.target.value);
             }}
           >
+            <option value="">None</option>
             {Object.entries(countr.countries).map(([country, code]) => {
               return (
                 <option
