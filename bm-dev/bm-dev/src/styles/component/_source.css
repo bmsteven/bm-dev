@@ -28,34 +28,18 @@
   padding-bottom: 1.5rem;
 }
 
-.source .container .left a {
-  border-radius: 5px;
-  font-weight: 700;
-  display: inline-flex;
-  appearance: none;
-  align-items: center;
-  justify-content: center;
-  transition: all 250ms;
-  position: relative;
-  white-space: nowrap;
-  vertical-align: middle;
-  line-height: 1.2;
-  outline: none;
-  height: 3rem;
-  min-width: 3rem;
-  font-size: 0.875rem;
-  padding-left: 3rem;
-  padding-right: 3rem;
-  background-color: #2F855A;
-  color: #F7FAFC;
-}
-
-.source .container .left a:hover {
-  background: #F7FAFC;
-  color: #2F855A;
-  outline: 1px solid #2F855A;
-}
-
 .source .container .right {
   width: 40%;
+}
+
+@media screen and (max-width: 992px) {
+  .source .container {
+    padding: 50px 0;
+  }
+  .source .container .left {
+    width: 100%;
+  }
+  .source .container .right {
+    display: none;
+  }
 }

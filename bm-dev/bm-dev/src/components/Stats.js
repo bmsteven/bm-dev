@@ -42,40 +42,40 @@ const Stats = ({ url }) => {
 
         }} */}
         <small>
-          last updates:{" "}
+          Imechapishwa:{" "}
           {stats.lastUpdate ? <span>{stats.lastUpdate}</span> : <span></span>}
         </small>
         <div className='showcase'>
           <div className='statBlock'>
-            confirmed:{" "}<br/>
+            <h3>Walioathirika</h3>
             {stats.confirmed ? (
-              <span>{stats.confirmed.value}</span>
+              <h2>{stats.confirmed.value}</h2>
             ) : (
-              <span>Not recorded</span>
+              <h3>haijarekodiwa</h3>
             )}
           </div>
           <div className='statBlock'>
-            recovered:{" "}<br/>
+            <h3>Waliopona</h3>
             {stats.recovered ? (
-              <span>{stats.recovered.value}</span>
+              <h2>{stats.recovered.value}</h2>
             ) : (
-              <span>Not recorded</span>
+              <h3>haijarekodiwa</h3>
             )}
           </div>
           <div className='statBlock'>
-            positive:{" "}<br/>
+            <h3>Walio Wagonjwa</h3>
             {stats.recovered && stats.confirmed ? (
-              <span>{stats.confirmed.value - stats.recovered.value}</span>
+              <h2>{stats.confirmed.value - stats.recovered.value}</h2>
             ) : (
-              <span>Not recorded</span>
+              <h3>haijarekodiwa</h3>
             )}
           </div>
           <div className='statBlock'>
-            deaths:{" "}<br/>
+            <h3>Vifo</h3>
             {stats.deaths ? (
-              <span>{stats.deaths.value}</span>
+              <h2>{stats.deaths.value}</h2>
             ) : (
-              <span>Not recorded</span>
+              <h3>haijarekodiwa</h3>
             )}
           </div>
         </div>

@@ -10,21 +10,22 @@ const NavBar = () => {
             <Link to='/'>COVID-19</Link>
           </h1>
         </div>
-        <div className='burger'>
+        {/* <div className='burger'>
           <span></span>
-        </div>
+        </div> */}
         <ul>
           <li>
-            <Link to='/#'>Nyumbani</Link>
+            <a href='#'>Nyumbani</a>
           </li>
           <li>
-            <Link to='/#facts'>Taarifa</Link>
+            <a href='#facts'>Taarifa</a>
+          </li>
+          <li>{/* <Link to='/corona-updates'>Statistics</Link> */}</li>
+          <li>
+            <a href='#symptoms'>Dalili</a>
           </li>
           <li>
-            {/* <Link to='/corona-updates'>Statistics</Link> */}
-          </li>
-          <li>
-            <Link to='/#symptoms'>Dalili</Link>
+            <Link to='/all-countries'>Nchi zote</Link>
           </li>
         </ul>
       </div>
